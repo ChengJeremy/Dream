@@ -1,0 +1,23 @@
+
+
+
+1) ENTITY      - Position (x, y)
+               - Tick
+               - Render
+
+
+
+		^
+		|
+
+
+2) CREATURE (EXTENDS ENTITY)    - Health
+
+
+
+		^
+		|
+
+
+3) PLAYER (EXTENDS CREATURE AND ENTITY)      -Texture
+	       				     -Input

@@ -32,12 +32,20 @@ public class Display {
         canvas.setMaximumSize(new Dimension(width, height));
         canvas.setMinimumSize(new Dimension(width, height));
         
+        //makes it so that the JFrame is the only one to focus on THIS ONE!!!
+        //helps with keyboard input
+        canvas.setFocusable(false);
+        
         frame.add(canvas);
         frame.pack();
     }
     
     public Canvas getCanvas(){
         return canvas;
+    }
+    
+    public JFrame getFrame(){
+        return frame;
     }
     
 }

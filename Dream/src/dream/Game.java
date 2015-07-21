@@ -7,6 +7,7 @@ import java.awt.image.BufferStrategy;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import dream.states.*;
+import dream.input.KeyManager;
 
 public class Game implements Runnable{
     
@@ -24,22 +25,33 @@ public class Game implements Runnable{
     //States
     private State gameState;
     private State mmState;
+    private State settings;
+    
+    //Input
+    private KeyManager keyManager;
     
     public Game(String title, int width, int height){
         this.width = width;
         this.height = height;
         this.title = title;
+        keyManager = new KeyManager();
     }
     
     private void init(){
         display = new Display(title, width, height);
+        display.getFrame().addKeyListener(keyManager);
         Assets.init();
         
-        gameState = new GameState();
+        gameState = new GameState(this);
+        mmState = new MMState(this);
+        settings = new Settings(this);
+        
         GameStateManager.setState(gameState);
     }
     
     private void tick(){
+        keyManager.tick();
+        
         if(GameStateManager.getState() != null)
             GameStateManager.getState().tick();
     }
@@ -99,6 +111,10 @@ public class Game implements Runnable{
         
         stop();
         
+    }
+    
+    public KeyManager getKeyManager(){
+        return keyManager;
     }
     
     //use synchronized method whenever working with threads directly; when starting or stopping a thread directly, use so as to not mess anything up in the process. 
