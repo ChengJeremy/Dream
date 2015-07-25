@@ -1,5 +1,7 @@
 package dream.states;
 
+//Aurhor: Jeremy Cheng
+
 import java.awt.Graphics;
 import dream.Game;
 

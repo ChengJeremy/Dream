@@ -1,5 +1,7 @@
 package dream.entity.creatures;
 
+//@author Jeremy Cheng
+
 import java.awt.Graphics;
 import dream.Game;
 import dream.gfx.*;

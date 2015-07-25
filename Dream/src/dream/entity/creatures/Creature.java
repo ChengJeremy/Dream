@@ -1,5 +1,7 @@
 package dream.entity.creatures;
 
+//@author Jeremy Cheng
+
 import dream.entity.Entity;
 
 //extends, so NEED ALL PARAMETERS TO MATCH!!!
@@ -8,8 +10,8 @@ public abstract class Creature extends Entity{
     //final so that no one can change the initial value for creatures! 
     public static final int DEFAULT_HEALTH = 10;
     public static final float DEFAULT_SPEED = 3.0f;
-    public static final int DEFAULT_CREATURE_WIDTH = 40,
-                            DEFAULT_CREATURE_HEIGHT = 40;
+    public static final int DEFAULT_CREATURE_WIDTH = 84,
+                            DEFAULT_CREATURE_HEIGHT = 84;
     
     protected int health;
     //float because we are working with a position! (dealing with movement, so not exactly exact)

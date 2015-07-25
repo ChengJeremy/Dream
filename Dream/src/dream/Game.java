@@ -1,5 +1,7 @@
 package dream;
 
+//@author Jeremy Cheng
+
 import dream.display.Display;
 import dream.gfx.*;
 import java.awt.*;

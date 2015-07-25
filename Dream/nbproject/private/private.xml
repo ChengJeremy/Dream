@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/tiles/Tile.java</file>
             <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/states/GameState.java</file>
-            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/Game.java</file>
-            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/gfx/Assets.java</file>
-            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/entity/creatures/Player.java</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/tiles/Stone_Floor.java</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/tiles/WallTile.java</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/tiles/FloorTile.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1,5 +1,7 @@
 package dream.entity;
 
+//@author Jeremy Cheng
+
 import java.awt.Graphics;
 
 //there are more efficient versions out there(of entities and the general flow of the code)
