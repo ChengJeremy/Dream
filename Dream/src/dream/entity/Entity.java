@@ -2,6 +2,7 @@ package dream.entity;
 
 //@author Jeremy Cheng
 
+import dream.Game;
 import java.awt.Graphics;
 
 //there are more efficient versions out there(of entities and the general flow of the code)
@@ -12,12 +13,14 @@ public abstract class Entity {
     //protected: basically private, but classes that extend this class also have access to them. 
     
     //float because smoother look; not perfect increments in game, so float is better than int in this case. 
+    Game game;
     protected float x, y;
     protected int width, height;
     
     //FIRST CLASS (SEE ENTITY QUICK DIAGRAM TXT FILE (in notes))
-    public Entity(float x, float y, int width, int height){
+    public Entity(Game game, float x, float y, int width, int height){
         //initialize otherwise will give error
+        this.game = game;
         this.x = x;
         this.y = y;
         this.width = width;

@@ -2,6 +2,7 @@ package dream.entity.creatures;
 
 //@author Jeremy Cheng
 
+import dream.Game;
 import dream.entity.Entity;
 
 //extends, so NEED ALL PARAMETERS TO MATCH!!!
@@ -18,11 +19,11 @@ public abstract class Creature extends Entity{
     protected float speed;
     protected float xMove, yMove;
     
-    public Creature(float x, float y, int width, int height){
+    public Creature(Game game, float x, float y, int width, int height){
         
         //super method will lead to the Entity class constructor with the arguments passed into it. 
         //extends the thing that "extends"
-        super(x, y, width, height);
+        super(game, x, y, width, height);
         health = DEFAULT_HEALTH;
         speed = DEFAULT_SPEED;
         xMove = 0;
