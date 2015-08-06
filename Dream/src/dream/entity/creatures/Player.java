@@ -8,11 +8,8 @@ import dream.gfx.*;
 
 public class Player extends Creature{
     
-    private Game game;
-    
     public Player(Game game, float x, float y){
-        super(x, y, Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
-        this.game = game;
+        super(game, x, y, Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
     }
     //not abstract class, so you need to implement the tick and render methods!
     //update here:
@@ -22,6 +19,7 @@ public class Player extends Creature{
         getInput();
         //then execute getInput() -> move() is located in Creature, which Player class extends! 
         move();
+        game.getGameCamera().centeronEntity(this);
     }
     
     private void getInput(){
@@ -44,7 +42,7 @@ public class Player extends Creature{
     @Override
     public void render(Graphics g) {
         //drawImage method takes in integers, not floats; thus have to convert x and y from float to int, through a simple process called "casting"
-        g.drawImage(Assets.player, (int)x, (int)y, width, height, null);
+        g.drawImage(Assets.player, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
     }
     
 }

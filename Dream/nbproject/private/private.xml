@@ -5,9 +5,12 @@
         <group>
             <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/tiles/Tile.java</file>
             <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/states/GameState.java</file>
-            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/tiles/Stone_Floor.java</file>
-            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/tiles/WallTile.java</file>
-            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/tiles/FloorTile.java</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/entity/creatures/Creature.java</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/Game.java</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/res/worlds/world1.txt</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/entity/Entity.java</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/worlds/World.java</file>
+            <file>file:/C:/Users/Jeremy%20Cheng/Documents/NetBeansProjects/Dream/src/dream/entity/creatures/Player.java</file>
         </group>
     </open-files>
 </project-private>

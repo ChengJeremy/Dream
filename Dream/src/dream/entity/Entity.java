@@ -13,7 +13,7 @@ public abstract class Entity {
     //protected: basically private, but classes that extend this class also have access to them. 
     
     //float because smoother look; not perfect increments in game, so float is better than int in this case. 
-    Game game;
+    protected Game game;
     protected float x, y;
     protected int width, height;
     
