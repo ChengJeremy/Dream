@@ -1,5 +1,7 @@
 package dream.gfx;
 
+//Aurhor: Jeremy Cheng
+
 import java.awt.image.BufferedImage;
 
 public class SpriteSheet {

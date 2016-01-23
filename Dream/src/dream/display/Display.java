@@ -1,5 +1,7 @@
 package dream.display;
 
+//@author Jeremy Cheng
+
 import java.awt.*;
 import javax.swing.JFrame;
 

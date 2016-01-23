@@ -1,5 +1,7 @@
 package dream.states;
 
+//@author Jeremy Cheng
+
 public class GameStateManager {
     
     private static State currentState = null;

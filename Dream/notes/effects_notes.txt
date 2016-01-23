@@ -1,0 +1,7 @@
+Some effects we could implement:
+
+1. sound: most basic: when the character moves a tile, there is a footstep sound on gravel/rock/stone
+
+2. scream??? Far and distant, whenever character collects another "figment" to his past?
+
+3. LOL JUMPSCARE GOGOGO

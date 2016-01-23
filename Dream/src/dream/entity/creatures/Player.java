@@ -1,36 +1,48 @@
 package dream.entity.creatures;
 
+//@author Jeremy Cheng
+
 import java.awt.Graphics;
 import dream.Game;
 import dream.gfx.*;
 
 public class Player extends Creature{
     
-    private Game game;
-    
     public Player(Game game, float x, float y){
-        super(x, y);
-        this.game = game;
+        super(game, x, y, Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
     }
     //not abstract class, so you need to implement the tick and render methods!
     //update here:
     @Override
     public void tick() {
+        //first set methods in getInput()
+        getInput();
+        //then execute getInput() -> move() is located in Creature, which Player class extends! 
+        move();
+        game.getGameCamera().centeronEntity(this);
+    }
+    
+    private void getInput(){
+        xMove = 0;
+        yMove = 0;
+        
+        //against the y-axis for computer graphics/ pixes is negative, while with the axis is positive
+        //this code moves the character!
         if(game.getKeyManager().up)
-            y -= 3;
+            yMove = -speed;
         if(game.getKeyManager().down)
-            y += 3;
+            yMove = speed;
         if(game.getKeyManager().left)
-            x -= 3;
+            xMove = -speed;
         if(game.getKeyManager().right)
-            x += 3;
+            xMove = speed;
     }
     
     //draw here:
     @Override
     public void render(Graphics g) {
         //drawImage method takes in integers, not floats; thus have to convert x and y from float to int, through a simple process called "casting"
-        g.drawImage(Assets.player, (int)x, (int)y, null);
+        g.drawImage(Assets.player, (int)(x - game.getGameCamera().getxOffset()), (int)(y - game.getGameCamera().getyOffset()), width, height, null);
     }
     
 }

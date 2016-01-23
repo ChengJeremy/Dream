@@ -1,0 +1,1 @@
+Figure out how to lock your code so that idiots don't find it and shit on it. 

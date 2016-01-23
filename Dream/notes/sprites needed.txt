@@ -2,12 +2,17 @@
 --lost wanderer with a dimly glowing lamp (maybe can run out...????)
 
 2. creatures
---basic corpse
---basic skeleton
+--NO CORPSES NECESSARY; KEEP GAME CLEAN LIKE SLENDERMAN!!!
 --THE MONSTER::: LARGE WITH TENTACLES; MALFORMED AND LIKE A DEMON
 
-3. ambiance/embellishment
---GRAY CASTLE TILE
---tree
---chest (heavy metal storage)
---dungeon items
+3. embellishment/gameplay-related
+--chest (heavy metal storage) (mayyyyyyybe)
+--dungeon items (figments of the protagonist's memories)
+
+4. TILES (MUST BE SEAMLESS)
+--murky, (reflective) water (have)
+--stone floor (have)
+--stone wall (have, but can be better)
+--stone path (have)
+
+5. MAP NEEDED ARGHHHH!!!!! (pulls out hair)

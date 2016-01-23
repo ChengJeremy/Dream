@@ -1,5 +1,7 @@
 package dream.gfx;
 
+//@author Jeremy Cheng
+
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.logging.Level;
